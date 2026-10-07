@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrainGate – Intake</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h2>🌾 GrainGate</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="intake.html">Intake</a>
+      <a href="stock.html">Stock</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>New Paddy Intake</h1>
+    <form id="intakeForm">
+      <label>Farmer Name</label>
+      <input type="text" id="name" placeholder="Eg: Murugan">
+      <span class="error" id="nameErr"></span>
+
+      <label>Paddy Variety</label>
+      <select id="variety">
+        <option>Ponni</option>
+        <option>ADT-37</option>
+        <option>CO-51</option>
+      </select>
+
+      <label>Weight (kg)</label>
+      <input type="number" id="weight" placeholder="Eg: 2000">
+      <span class="error" id="weightErr"></span>
+
+      <label>Moisture (%)</label>
+      <input type="number" id="moisture" placeholder="Eg: 2">
+      <span class="error" id="moistErr"></span>
+
+      <button type="submit">Calculate & Save</button>
+      <div class="result" id="result"></div>
+    </form>
+  </div>
+
+  <footer>© 2026 GrainGate | Rice Mill Intake System</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

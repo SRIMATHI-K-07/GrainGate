@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrainGate – Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h2>🌾 GrainGate</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="intake.html">Intake</a>
+      <a href="stock.html">Stock</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Intake Records</h1>
+    <input type="text" id="search" placeholder="Search farmer name..." onkeyup="searchFarmer()">
+    <br><br>
+    <table>
+      <thead>
+        <tr><th>Farmer</th><th>Variety</th><th>Weight (kg)</th><th>Moisture</th><th>Net (kg)</th><th>Amount</th></tr>
+      </thead>
+      <tbody id="stockBody"></tbody>
+    </table>
+    <h3 id="totals" style="margin-top:14px;"></h3>
+  </div>
+
+  <footer>© 2026 GrainGate | Rice Mill Intake System</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
